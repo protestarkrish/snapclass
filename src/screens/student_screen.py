@@ -14,6 +14,10 @@ import time
 from src.components.dialog_enroll import enroll_dialog
 from src.components.subject_card import subject_card
 
+
+style_background_dashboard()
+style_base_layout()
+
 def student_dashboard():
     student_data = st.session_state.student_data
     student_id = student_data['student_id']
@@ -90,8 +94,7 @@ def student_dashboard():
 def student_screen():
 
 
-    style_background_dashboard()
-    style_base_layout()
+
 
 
     if "student_data" in st.session_state:
